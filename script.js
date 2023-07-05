@@ -38,8 +38,8 @@ let promise5 = new Promise((resolve, reject) => {
     }, randomTime * 1000);
 });
 
-const promises = [promise1, promise2, promise3, promise4, promise5];
-
+// const promises = [promise1, promise2, promise3, promise4, promise5];
+window.promises = [promise1, promise2, promise3, promise4, promise5];
 Promise.any(promises).then((result) => {
     document.getElementById("output").innerText = result;
 });
