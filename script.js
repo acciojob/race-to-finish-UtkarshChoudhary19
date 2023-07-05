@@ -33,8 +33,8 @@ let promise5 = new Promise((resolve, reject) => {
     }, Math.floor(Math.random() * 5));
 });
 
-const myArray = [promise1, promise2, promise3, promise4, promise5];
+const promises = [promise1, promise2, promise3, promise4, promise5];
 
-Promise.any(myArray).then((result) => {
+Promise.any(promises).then((result) => {
     document.getElementById("output").innerText = result;
 });
